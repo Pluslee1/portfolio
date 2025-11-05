@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pluslee – Projects</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="assets/favicon.png" type="image/png"/>
+  <style>
+    /* Additional styles for project images */
+    .project-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      transition: all 0.3s ease;
+    }
+    
+    .project-image:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(139, 92, 246, 0.3);
+    }
+    
+    .card {
+      position: relative;
+    }
+    
+    .project-tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+    
+    .tag {
+      background: rgba(139, 92, 246, 0.15);
+      color: var(--accent-light);
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand">Pluslee</div>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="experience.html">Experience</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>My Projects</h1>
+  <p class="lead">Here are some of the projects I've built or worked on. I'm always exploring new ideas in Web3 and development.</p>
+</section>
+
+<div class="container">
+  <section class="section">
+    <div class="grid">
+      
+      <div class="card">
+        <img src="assets/crypto-dashboard.png" alt="Crypto Dashboard Project" class="project-image" onerror="this.style.display='none'">
+        <h3>Crypto Dashboard</h3>
+        <p>Front-end prototype showing token metrics, price charts, and on-chain signals. Built with responsive design and real-time data visualization.</p>
+        <div class="project-tags">
+          <span class="tag">React</span>
+          <span class="tag">Chart.js</span>
+          <span class="tag">Web3</span>
+        </div>
+        <p style="margin-top: 20px;"><a href=" https://pluslee1.github.io/crypto-dashboard-mockup" target="_blank">View Project →</a></p>
+      </div>
+      
+      <div class="card">
+        <img src="assets/web3-portfolio.png" alt="Web3 Portfolio Project" class="project-image" onerror="this.style.display='none'">
+        <h3>Web3 Portfolio Site</h3>
+        <p>A demo portfolio showcasing wallet-based identity and simple Web3 integrations. Features connect wallet functionality and NFT display.</p>
+        <div class="project-tags">
+          <span class="tag">HTML/CSS</span>
+          <span class="tag">Ethers.js</span>
+          <span class="tag">MetaMask</span>
+        </div>
+        <p style="margin-top: 20px;"><a href=" https://pluslee1.github.io/web3-portfolio-mockup" target="_blank">View Project →</a></p>
+      </div>
+      
+      <div class="card">
+        <img src="assets/nft-marketplace.png" alt="NFT Marketplace UI Project" class="project-image" onerror="this.style.display='none'">
+        <h3>NFT Marketplace UI</h3>
+        <p>Concept UI for buying, listing, and filtering NFTs with clean interface and intuitive design. Focus on user experience and conversion flows.</p>
+        <div class="project-tags">
+          <span class="tag">UI/UX</span>
+          <span class="tag">React</span>
+          <span class="tag">Tailwind</span>
+        </div>
+        <p style="margin-top: 20px;"><a href=" https://pluslee1.github.io/nft-marketplace-mockup" target="_blank">View Project →</a></p>
+      </div>
+      
+      <div class="card">
+        <img src="assets/blockchain-analytics.png" alt="Blockchain Analytics Tool Project" class="project-image" onerror="this.style.display='none'">
+        <h3>Blockchain Analytics Tool</h3>
+        <p>A mock tool analyzing token activity on-chain. Includes interactive charts, real-time alerts, and comprehensive metrics dashboard.</p>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Web3.py</span>
+          <span class="tag">Data Analysis</span>
+        </div>
+        <p style="margin-top: 20px;"><a href="https://pluslee1.github.io/blockchain-analytics-mockup" target="_blank">View Project →</a></p>
+      </div>
+      
+    </div>
+  </section>
+</div>
+
+<footer class="site-footer">© 2025 Pluslee – Built by Lekan Oladusi</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
